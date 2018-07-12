@@ -1,5 +1,8 @@
 # Countdown
 Admin Controlled Countdown
+
+http://staging.torontossc.com/ in the header, make sure to minimize to display responsive
+
 There is a form in the admin panel that takes 5 inputs:
   - Start Date Time
   - End Date Time
