@@ -1,0 +1,46 @@
+#clockdiv{
+    font-family: Changa;
+    font-weight: 400;
+    font-size: 16px;
+    display: none;
+    margin: 10px auto 0;
+    width: 100%;
+}
+
+#clockdiv div{
+  padding: 0 2px;
+  display: inline-block;
+}
+
+#clockdiv div span:first-child{
+  display: inline-block;
+  width: 21px;
+  font-weight: 300;
+}
+
+#clockdiv p {
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+#icons {
+    display: inline-block;
+    float: right;
+}
+
+.smalltext {
+    display: inline-block;
+    font-weight: 400;
+}
+
+@media (min-width:481px) {
+    #clockdiv {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:543px) {
+    #clockdiv {
+        width: auto;
+    }
+}
