@@ -1,0 +1,28 @@
+<script
+$(document).ready(function() {
+	var currentDateTime = Date.parse('<?= date('M d Y H:i:s');?>');
+	var deadline = Date.parse('<?= date('M d Y H:i:s', $Info[0]["CountdownDate"])?>');
+	initializeClock('clockdiv', deadline, currentDateTime, "<?= $Info[0]["ExpiredTimeMessage"] ?>" , "<?= $Info[0]["CountdownMessage"] ?>",  <?= $Info[0]["IsTimerActive"]?>);
+});
+</script>
+<div class=\"top\">
+	<div class=\"text-center\" id=\"clockdiv\">   
+		<p id=\"message\"></p>
+		<div id='dayNum'>
+			<span class=\"days\"></span>
+			<span class=\"smalltext\">Days</span>
+		</div>
+		<div >
+			<span class=\"hours\"></span>
+			<span class=\"smalltext\">Hours</span>
+		</div>
+		<div>
+			<span class=\"minutes\"></span>
+			<span class=\"smalltext\">Minutes</span>
+		</div>
+		<div>
+			<span class=\"seconds\"></span>
+			<span class=\"smalltext\">Seconds</span>
+		</div>
+	</div>
+</div>
